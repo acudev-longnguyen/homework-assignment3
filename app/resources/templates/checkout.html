@@ -1,0 +1,31 @@
+<script type="text/javascript" charset="utf-8" src="resources/js/checkout.js"></script>
+<h1>Checkout</h1>
+
+<h2>Your total is: $<span id="total"></span></h2>
+
+<div class="formWrapper">
+  <div class="formError" id="profileError">Failed to save changes</div>
+  <div class="formSuccess" id="profileSuccess">Your Changes Have Been Saved</div>
+  <div class="inputWrapper inline">
+      <input type="radio" class="smallinput" name="cardType" value="1" checked /><label>Mastercard</label>
+      <input type="radio" class="smallinput" name="cardType" value="2" /><label>Visa</label>
+      <input type="radio" class="smallinput" name="cardType" value="3" /><label>Express</label>
+  </div>
+  <br />
+  <div class="inputWrapper mtop30">
+    <div class="inputLabel">Card number</div>
+    <input type="text" id="cardnumber" maxlength="16" />
+  </div>
+  <div class="inputWrapper">
+    <div class="inputLabel">CVV</div>
+    <input class="firstNameInput" type="text" id="cvv" placeholder="123" />
+  </div>
+  <div class="inputWrapper">
+    <div class="inputLabel">Expire</div>
+    <input class="lastNameInput width49" maxlength="2" type="text" id="month" placeholder="MM" />/
+    <input class="lastNameInput width49" maxlength="2" type="text" id="year" placeholder="YY" />
+  </div>
+  <div class="inputWrapper ctaWrapper">
+    <button type="submit" id="btn_process" class="cta green">Process</button>
+  </div>
+</div>

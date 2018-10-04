@@ -1,0 +1,57 @@
+<html>
+  <head>
+
+    <!-- General Settings -->
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en-us">
+    <base href="{templateRootPath}" />
+
+    <!-- Meta Tags -->
+    <title>Instant Pizza | Hot Ovens</title>
+    <meta name="description" content="We deliver your pizza instantly">
+
+    <!-- Static Assets -->
+    <link type="image/x-icon" rel="icon" href="resources/images/favicon.ico">
+    <script type="text/javascript" charset="utf-8" src="resources/js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/app.css" />
+
+  </head>
+  <body class="main">
+    <!-- Page Wrapper -->
+    <div class="wrapper">
+      <!-- Header -->
+      <div class="header">
+        <!-- Logo -->
+        <a class="logo" href="/">
+          <!-- <img src="public/logo.png" alt="Logo" /> -->
+        </a>
+        <!-- Navigation -->
+        <ul class="menu">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li class="loggedOut">
+            <a href="/account/create">Signup</a>
+          </li>
+          <li class="loggedOut">
+            <a href="/session/create">Login</a>
+          </li>
+          <li class="loggedIn">
+            <a href="/menu">Menu</a>
+          </li>
+          <li class="loggedIn">
+            <a href="/cart">Cart</a>
+          </li>
+          <li class="loggedIn">
+            <a href="/account">Account Settings</a>
+          </li>
+          <li class="loggedIn">
+            <a id="btn_signout" href="#">Logout</a>
+          </li>
+        </ul>
+
+        <div class="clear"></div>
+      </div>
+
+      <!-- Page-Specific Content -->
+      <div class="content">
